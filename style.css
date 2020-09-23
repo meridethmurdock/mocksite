@@ -1,0 +1,155 @@
+* {
+    color: rgb(71, 43, 18);
+}
+
+.justify-content-around {
+    display: flex;
+}
+
+.end-note {
+    padding: 8rem 0;
+}
+
+.navbar {
+    display: block;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.picture {
+    width: 150% !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic {
+    width: 40%;
+    height: 40%;
+    padding-left: 7rem;
+}
+.top-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-text {
+    color: rgb(56, 41, 12) !important;
+    font-size: 2rem;
+}
+
+.main-menu {
+    background-color: rgb(194, 178, 154) !important;
+}
+
+.jumbotron {
+    margin-bottom: 0rem;
+}
+
+.intro {
+    padding-top: 5rem;
+}
+
+.portland {
+    width: 100%;
+    background-image: url(/pics/porland-2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: cover;
+    width: 100%;
+}
+
+.lead {
+    font-weight: 600;
+    color: black;
+}
+
+main {
+    background-color: rgb(243, 243, 243) !important;
+}
+
+.cta {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 12vw;
+    width: 50%;
+}
+
+.card {
+    width: 100%;
+    padding: 2rem;
+}
+
+.card-pics {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.money-back {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.mt-5, 
+.my-5 {
+    /* margin-top: 0rem !important; */
+}
+
+.team-box {
+    padding-top: 3rem;
+}
+
+.footer {
+    background-color: rgb(194, 178, 154) !important;
+    padding-top: 1rem;
+    padding-bottom: .5rem
+}
+
+
+@media (max-width: 988px ) {
+    .navbar-brand {
+        display: flex;
+        align-content: center;
+    }
+    .picture {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .pic {
+        width: 40%;
+        padding: 2rem;
+    }
+    .card {
+        width: 70%;
+        margin: 3rem auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        padding-top: 4rem;
+    }
+    .navbar {
+        display: flex;
+        padding: 0rem 3rem;
+    }
+    .display-3 {
+        font-size: 3rem;
+        padding-bottom: 0;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .portland {
+        height: 
+    }
+    .navbar-brand  {
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        width: 100%; 
+    }
+}
+
+
