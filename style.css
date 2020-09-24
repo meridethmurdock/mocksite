@@ -2,70 +2,45 @@
     color: rgb(71, 43, 18);
 }
 
-.justify-content-around {
-    display: flex;
+main {
+    background-color: rgb(243, 243, 243) !important;
 }
-
-.end-note {
-    padding: 8rem 0;
-}
-
-.navbar {
-    display: block;
-    padding-left: 7rem;
-    padding-right: 7rem;
-}
-
-.picture {
-    width: 150% !important;
-    display: flex;
-    justify-content: space-around;
-}
-
-.pic {
-    width: 40%;
-    height: 40%;
-    padding-left: 7rem;
-}
-.top-navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-}
-.navbar-text {
-    color: rgb(56, 41, 12) !important;
-    font-size: 2rem;
-}
-
-.main-menu {
-    background-color: rgb(194, 178, 154) !important;
-}
-
-.jumbotron {
-    margin-bottom: 0rem;
-}
-
-.intro {
-    padding-top: 5rem;
-}
-
-.portland {
-    width: 100%;
-    background-image: url(/pics/porland-2.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
-    background-size: cover;
-    width: 100%;
-}
-
 .lead {
     font-weight: 600;
     color: black;
 }
 
-main {
-    background-color: rgb(243, 243, 243) !important;
+
+.top-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
+    .navbar {
+        display: block;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        background-color: rgb(194, 178, 154) !important;
+        }
+
+        .justify-content-around {
+            display: flex;
+        } /* the preset doesnt come with flex enabled */
+
+        .navbar-text {
+            color: rgb(56, 41, 12) !important;
+            font-size: 2rem;
+        }
+
+
+.intro {
+    padding-top: 5rem;
+}
+    .portland {
+        background-image: url(/pics/porland-2.jpg);
+        background-size: cover;
+    }
+
 
 .cta {
     margin-top: 6rem;
@@ -73,29 +48,38 @@ main {
     margin-left: 12vw;
     width: 50%;
 }
+    .product-pitch-and-picture {
+        width: 150% !important;
+        /* necessary to get pic to the right */
+        display: flex;
+    }
+            .product-picture {
+                width: 40%;
+                height: 40%;
+                padding-left: 7rem;
+            }
 
-.card {
-    width: 100%;
-    padding: 2rem;
+.team-box {
+    padding-top: 3rem;
 }
+    .card {
+        width: 100%; 
+        /* removing it makes the height off */
+        padding: 2rem;
+    }
+        .card-pics {
+            height: 20rem;
+            object-fit: cover;
+        }
 
-.card-pics {
-    height: 20rem;
-    object-fit: cover;
-}
 
 .money-back {
     padding-left: 3rem;
     padding-right: 3rem;
 }
 
-.mt-5, 
-.my-5 {
-    /* margin-top: 0rem !important; */
-}
-
-.team-box {
-    padding-top: 3rem;
+.end-note {
+    padding: 8rem 0;
 }
 
 .footer {
@@ -106,19 +90,13 @@ main {
 
 
 @media (max-width: 988px ) {
-    .navbar-brand {
-        display: flex;
-        align-content: center;
+
+    .product-picture {
+        width: 60%;
+        padding: 2rem; 
+        /* disabling padding makes mickey smaller? */
     }
-    .picture {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .pic {
-        width: 40%;
-        padding: 2rem;
-    }
+
     .card {
         width: 70%;
         margin: 3rem auto !important;
@@ -139,9 +117,6 @@ main {
     }
     .display-4 {
         font-size: 2rem;
-    }
-    .portland {
-        height: 
     }
     .navbar-brand  {
         display: flex;
