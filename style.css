@@ -1,7 +1,6 @@
 * {
     color: rgb(71, 43, 18);
 }
-
 main {
     background-color: rgb(243, 243, 243) !important;
 }
@@ -13,9 +12,9 @@ main {
     display: block;
 }
 
-textarea:focus, 
-input:focus {
+button {
     outline: none !important;
+    /* doesn't work? */
 }
 
 
@@ -30,7 +29,6 @@ input:focus {
         padding: 0rem 7rem;
         background-color: rgb(194, 178, 154);
     }
-
         .navbar-toggler {
             border-color: rgb(194, 178, 154) !important;
         }
@@ -38,6 +36,7 @@ input:focus {
             color: rgb(56, 41, 12) !important;
             font-size: 2rem;
         }
+        /* had to use important? */
 
 
 
@@ -48,8 +47,9 @@ input:focus {
 }
 
 .MINEportland-pic {
-    width: 100%;  
-    opacity: 50%;
+    opacity: 30%;
+    width: 100%;
+    min-height: 60vh;
 }
 
 .MINEcta {
@@ -58,7 +58,7 @@ input:focus {
 }
     .MINEproduct-pitch-and-picture {
         width: 150% !important;
-        /* necessary to get pic to the right */
+        /* to get pic to the right bc parent div is 50% */
         display: flex;
     }
         .MINEproduct-picture {
@@ -73,6 +73,7 @@ input:focus {
     padding: 1rem;
 }
 
+
 .MINEmoney-back {
     padding: 5rem 14rem;
 }
@@ -84,13 +85,17 @@ input:focus {
 }
 
 
-@media (max-width: 988px ) {
+@media (max-width: 1060px) {
     .display-3 {
-        font-size: 3rem;
+        font-size: 3rem ;
     }
     .display-4 {
         font-size: 2rem;
     }
+}
+/* the intro text spilled over the picture if i didnt decrease the font size a little earlier */
+
+@media (max-width: 988px ) {
     .card {
         width: 70%;
         margin: 3rem auto !important;
@@ -98,10 +103,6 @@ input:focus {
     }
     .MINEintro-text {
         padding: 4rem 2rem;
-    }
-    .MINEportland-pic {
-        height: 25rem;
-        /* i know this isnt ideal */
     }
     .MINEproduct-picture {
         width: 50%;
@@ -112,7 +113,6 @@ input:focus {
         padding: 3rem;
     }
 }
-
 
 @media (max-width: 767px) {
     .card {
@@ -130,6 +130,7 @@ input:focus {
     .MINEintro-text {
         padding: 1rem 0rem;
     }
+
     .MINEproduct-picture {
         width: 70%;
     }
