@@ -1,112 +1,142 @@
 <html>
 
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normal.css">
-    <title>why are you here</title>
-</head>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="normal.css">
+      <title>why are you here</title>
+  </head>
 
-  <body id="welcome" data-spy="scroll" data-target=".navbar">
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light main-menu top-navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="MINEtop-navbar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <div class="justify-content-around" >
-                <div class="collapse navbar-collapse" id="navbarText">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#welcome">welcome</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#cta">the product</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#team">the team</a>
-                    </li>
-                  </ul>
-                </div>
-                  
-                <div>
-                  <span class="navbar-text">
-                    useless site
-                  </span>
-                </div>
-              </div>
-        </nav>
+          <div class="justify-content-around d-flex">
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#welcome">welcome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cta">the product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">the team</a>
+                </li>
+              </ul>
+            </div>
+                      
+            <div>
+              <span class="navbar-text"> <a href="#welcome">
+                useless site</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
+
     <main>
-        <div class="jumbotron-fluid intro" id="welcome">
-            <div class="portland"> 
-              <div class="container p-5 intro-text">
+
+      <div class="jumbotron-fluid" id="welcome">
+        <div class="pt-5">
+
+          <div class="MINEintro-text">
+            <div class="container"> 
+              <div class= "p-5">
                 <h1 class="display-3">i don't know what i'm doing.</h1>
                 <p class="display-4 transition-time">i promise.</p>
                 <p class="lead">try it free. 30-day money-back guarantee.</p>
               </div>
             </div>
-        </div>
+          </div>
 
-        <div class="jumbotron jumbotron-fluid" id="cta">
-            <div class="container cta">
-              <h1 class="display-3">hey, you.</h1>
-                <div class="product-pitch-and-picture">
-                  <p class="display-4 ">this is an attempt at getting your attention.</p>
-                  <img class="product-picture" src="pics/mickey.png" alt="thing">
-                </div>
-              <p class="lead">you know you need this product. it's life-changing. mind-altering. one may even say it... untethers the soul.</p>
-              <button type="button" class="btn btn-outline-primary">buy it.</button>
+          <img class="MINEportland-pic" src="pics/porland.jpg" alt="portland"/>
+
+        </div>
+      </div>
+
+
+      <div class="jumbotron-fluid" id="cta">
+        <div class="container">
+          <div class="MINEcta">
+            <h1 class="display-3">
+              hey, you.</h1>
+            <div class="MINEproduct-pitch-and-picture">
+              <p class="display-4">this is an attempt at getting your attention.</p>
+              <img class="MINEproduct-picture" src="pics/mickey.png" alt="mickey mouse, kingdom hearts edition.">
             </div>
+            <p class="lead">you know you need this product. it's life-changing. mind-altering. one may even say it... untethers the
+              soul.</p><br>
+            <button type="button" class="btn btn-outline-primary">
+              buy it.</button>
+          </div>
         </div>
+      </div>
 
-      <div class="meet">
-        <h1 class="display-4 text-center team-box" id="team">meet the team. </h1>
-          <div class="card-deck mx-5">
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="pics/me2.png" class="card-pics" alt="badly drawn cat">
-                <div class="card-body my-5">
+      
+      <div>
+        <h1 class="display-4 text-center" id="team">meet the team. </h1>
+        <div class="card-deck pt-5 mx-5">
+          <!-- putting p and m on a child div made it break into a column -->
+          <div class="col-lg-4">
+            <div class="card">
+                <img src="pics/me2.png" class="MINEcard-pics" alt="badly drawn cat">
+                <div class="card-body"> 
                   <h5 class="card-title">me</h5>
-                  <p class="card-text">an incredibly fasinating, show-stopping, earth shattering humble person.</p>
+                  <p class="card-text my-3">an incredibly fasinating, show-stopping, earth shattering humble person.</p>
                 </div>
-              </div>
             </div>
+          </div>
 
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="pics/myself.jpg" class="card-pics" alt="jane lynch">
-                <div class="card-body my-5">
-                  <h5 class="card-title">myself</h5>
-                  <p class="card-text">grotesque human thing.<br><br></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="card">
-                <img src="pics/i.jpg" class="card-pics" alt="jane lynch again">
-                <div class="card-body my-5">
-                  <h5 class="card-title">i</h5>
-                  <p class="card-text">exudes an aura equivilent to the mystery of a junk drawer.</p>
-                </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="pics/myself.jpg" class="MINEcard-pics" alt="jane lynch">
+              <div class="card-body">
+                <h5 class="card-title">myself</h5>
+                <p class="card-text my-3">grotesque human thing.<br><br></p>
               </div>
             </div>
           </div>
 
-        <div class="col-lg-6 container-fluid end-note text-center money-back">
-          <h2>the team has worked tirelessly on this product, and we know you'll love it as much as jane lynch does. or get your money back, full guarantee, no questions asked.<br><br> okay well, maybe a few questions asked. <br><br> maybe something like: why didn't you like our product? <br><br> so no hard questions (like about geometery or pathogorus) asked.</h2>
-          <p class="lead">*not affilated with jane lynch</p><br>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="pics/i.jpg" class="MINEcard-pics" alt="jane lynch again">
+              <div class="card-body">
+                <h5 class="card-title">i</h5>
+                <p class="card-text my-3">exudes an aura equivilent to the mystery of a junk drawer.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  
+      <div class="container-fluid text-center">
+        <div class="MINEmoney-back">
+          <h2>the team has worked tirelessly on this product, and we know you'll love it as much as superstar Jane Lynch does. or get your money back, full guarantee, no questions asked.<br><br> okay well, maybe a few questions asked. <br><br> maybe something like: why didn't you like our product? <br><br> so no hard questions (like about geometery or pythagoras) asked.</h2>
+          <p class="lead">*not affiliated with Jane Lynch</p><br>
           <button class="btn btn-outline-primary my-5 my-sm-0" type="submit">money-back guarantee</button>
         </div>
       </div>
+
     </main>
 
-    <footer class="w-100">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light footer">
-        <div class="mx-1 row" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">useless website v.1</a>
+
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="MINEfooter">
+          <div class="mx-1 row">
+
+            <a class="navbar-brand" href="#">
+              useless website v.1</a>
+
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
                 <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
@@ -118,33 +148,16 @@
                 <a class="nav-link" href="#">thanks for watching</a>
               </li>
             </ul>
+
             <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="is anyone there?" aria-label="Search">
-              <button class="btn btn-outline-primary my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModal">scream into the void</button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <input class="form-control mr-sm-2" type="search" placeholder="is anyone there?" aria-label="Search"/>
+              <button class="btn btn-outline-primary my-2 my-sm-0">scream into the void</button>
             </form>
+
+          </div>
         </div>
       </nav>
     </footer>
+      
   </body>
-  </div>
-</main>
 </html>
