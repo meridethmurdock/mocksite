@@ -12,15 +12,9 @@ main {
     display: block;
 }
 
-button {
-    outline: none !important;
-    /* doesn't work? */
-}
-
 
 .navbar {
     padding: 0rem;
-    /* couldn't add this to child div with same effect */
 }
     .MINEtop-navbar {
         position: fixed;
@@ -33,17 +27,15 @@ button {
             border-color: rgb(194, 178, 154) !important;
         }
         .navbar-text {
-            color: rgb(56, 41, 12) !important;
             font-size: 2rem;
         }
-        /* had to use important? */
 
 
 
 .MINEintro-text {
     position: absolute;
     z-index: 2;
-    padding: 6rem 4rem;
+    padding: 7%;
 }
 
 .MINEportland-pic {
@@ -52,17 +44,19 @@ button {
     min-height: 60vh;
 }
 
-.MINEcta {
-    margin: 6rem 12vw 6rem 3rem;
-    width: 50%;
+
+.MINEcta-text {
+    margin: 7rem;
+    margin-left: 0rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
-    .MINEproduct-pitch-and-picture {
-        width: 150% !important;
-        /* to get pic to the right bc parent div is 50% */
-        display: flex;
-    }
-        .MINEproduct-picture {
-            width: 30%;
+        .MINEcta-picture {
+            width: 20%;
+            height: 1%;
+            /* setting a height at all fixes the stretching? */
+            align-self: center;
         }
 
 
@@ -75,9 +69,12 @@ button {
 
 
 .MINEmoney-back {
-    padding: 5rem 14rem;
+    padding: 7rem 14rem;
 }
 
+.navbar-nav {
+    margin-right: auto !important;
+}
 
 .MINEfooter {
     background-color: rgb(194, 178, 154) !important;
@@ -85,32 +82,45 @@ button {
 }
 
 
-@media (max-width: 1060px) {
+@media (max-width: 988px ) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 70%;
+        margin: .5rem auto !important;
+        /* card-deck or card has margin-left 15px as preset */
+    }
+    .MINEintro-text {
+        padding: 5rem 2rem;
+    }
+    .MINEcta-text {
+        margin: 20% 2%;
+    }
+    .MINEcta-picture {
+        width: 30%;
+        padding: 2%; 
+    }
+    .MINEmoney-back {
+        padding: 5rem;
+    }
     .display-3 {
-        font-size: 3rem ;
+        font-size: 3rem;
     }
     .display-4 {
         font-size: 2rem;
     }
-}
-/* the intro text spilled over the picture if i didnt decrease the font size a little earlier */
-
-@media (max-width: 988px ) {
-    .card {
-        width: 70%;
-        margin: 3rem auto !important;
-        /* card-deck or card has margin-left 15px as preset*/
+    .navbar-brand {
+        align-self: center;
     }
-    .MINEintro-text {
-        padding: 4rem 2rem;
+    .MINEfooter > .row {
+        justify-content: center !important;
     }
-    .MINEproduct-picture {
-        width: 50%;
-        padding: 2rem; 
-        /* disabling padding makes mickey smaller? is it because of box-sizing border-box? */
+    form {
+        padding-top: 1rem;
     }
-    .MINEmoney-back {
-        padding: 3rem;
+    .navbar-nav {
+        margin-right: 0rem !important;
     }
 }
 
@@ -127,14 +137,61 @@ button {
         justify-content: space-around;
         padding: 0rem 3rem;
     }
-    .MINEintro-text {
-        padding: 1rem 0rem;
+    .cta {
+        display: flex;
+        flex-direction: column;
     }
-
-    .MINEproduct-picture {
-        width: 70%;
+    .MINEcta-text {
+        width: 80%;
+        align-self: center;
+        margin-bottom: 0rem;
+    }
+    .MINEcta-picture {
+        width: 40%;
+        margin-bottom: 7rem;
     }
     
 }
+
+@media (max-width: 500px) {
+    .MINEtop-navbar { 
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .p-5 {
+        padding: 1rem !important;
+    }
+    .MINEcta-picture {
+        width: 50%;
+    }
+    .MINEcard-pics {
+        height: 10rem;
+    }
+    .MINEmoney-back {
+        padding: 5rem 1rem;
+    }
+    .my-5 {
+        margin: 1rem !important;
+    }
+
+@media (max-width: 330px) {
+    h1 {
+        font-size: 1.9rem !important;
+    }
+    p {
+        font-size: 1rem !important;
+    }
+    h2 {
+        font-size: 1rem !important;
+    }
+    .navbar-text {
+        font-size: 1.5rem !important;
+    }
+    .w-25 {
+        width: 40% !important;
+    }
+    
+}
+
 
 
