@@ -1,8 +1,8 @@
-* {
+body {
     color: rgb(71, 43, 18);
 }
 main {
-    background-color: rgb(243, 243, 243) !important;
+    background-color: rgb(243, 243, 243);
 }
 .lead {
     font-weight: 600;
@@ -13,10 +13,11 @@ main {
 }
 
 
+
 .navbar {
     padding: 0rem;
 }
-    .MINEtop-navbar {
+    .top-navbar {
         position: fixed;
         z-index: 999;
         width: 100%;
@@ -31,44 +32,46 @@ main {
         }
 
 
+.jumbotron-fluid {
+    overflow: hidden;
+}
 
-.MINEintro-text {
+.intro-text {
     position: absolute;
     z-index: 2;
-    padding: 7%;
+    padding: 12%;
 }
 
-.MINEportland-pic {
+.portland-pic {
     opacity: 30%;
-    width: 100%;
     min-height: 60vh;
+    min-width: 100%;
 }
 
 
-.MINEcta-text {
+.cta-text {
     margin: 7rem;
     margin-left: 0rem;
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-        .MINEcta-picture {
+        .cta-picture {
             width: 20%;
             height: 1%;
-            /* setting a height at all fixes the stretching? */
             align-self: center;
         }
 
 
 
-.MINEcard-pics {
+.card-pics {
     height: 20rem;
     object-fit: cover;
     padding: 1rem;
 }
 
 
-.MINEmoney-back {
+.money-back {
     padding: 7rem 14rem;
 }
 
@@ -76,7 +79,7 @@ main {
     margin-right: auto !important;
 }
 
-.MINEfooter {
+.footer {
     background-color: rgb(194, 178, 154) !important;
     padding: 1rem 3rem 0rem 3rem;
 }
@@ -91,17 +94,17 @@ main {
         margin: .5rem auto !important;
         /* card-deck or card has margin-left 15px as preset */
     }
-    .MINEintro-text {
-        padding: 5rem 2rem;
+    .intro-text {
+        padding-top: 20%;
     }
-    .MINEcta-text {
+    .cta-text {
         margin: 20% 2%;
     }
-    .MINEcta-picture {
+    .cta-picture {
         width: 30%;
         padding: 2%; 
     }
-    .MINEmoney-back {
+    .money-back {
         padding: 5rem;
     }
     .display-3 {
@@ -113,7 +116,7 @@ main {
     .navbar-brand {
         align-self: center;
     }
-    .MINEfooter > .row {
+    .footer > .row {
         justify-content: center !important;
     }
     form {
@@ -132,7 +135,7 @@ main {
         display: flex;
         align-items: center;
     }
-    .MINEtop-navbar {
+    .top-navbar {
         display: flex;
         justify-content: space-around;
         padding: 0rem 3rem;
@@ -141,38 +144,32 @@ main {
         display: flex;
         flex-direction: column;
     }
-    .MINEcta-text {
+    .cta-text {
         width: 80%;
         align-self: center;
         margin-bottom: 0rem;
     }
-    .MINEcta-picture {
+    .cta-picture {
         width: 40%;
         margin-bottom: 7rem;
-    }
-    
+    }    
 }
 
 @media (max-width: 500px) {
-    .MINEtop-navbar { 
+    .top-navbar { 
         display: flex;
         flex-direction: row-reverse;
     }
-    .p-5 {
-        padding: 1rem !important;
-    }
-    .MINEcta-picture {
+    .cta-picture {
         width: 50%;
     }
-    .MINEcard-pics {
+    .card-pics {
         height: 10rem;
     }
-    .MINEmoney-back {
+    .money-back {
         padding: 5rem 1rem;
     }
-    .my-5 {
-        margin: 1rem !important;
-    }
+
 
 @media (max-width: 330px) {
     h1 {
@@ -187,10 +184,9 @@ main {
     .navbar-text {
         font-size: 1.5rem !important;
     }
-    .w-25 {
-        width: 40% !important;
+    .intro-text {
+        padding-top: 8rem;
     }
-    
 }
 
 
